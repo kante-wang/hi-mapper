@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/himapper?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 1234
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: wang.kante.himapper.entity
+
