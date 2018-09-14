@@ -12,7 +12,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import wang.kante.himapper.entity.SysUser;
 
 /**
- * @Auther: 王传伟
+ * @Auther: wcw_2007@163.com
  * @Date: 2018/9/13 18:20
  * @Description:
  */
