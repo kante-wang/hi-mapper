@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import wang.kante.himapper.entity.SysUser;
 import wang.kante.himapper.mapper.SysUserMapper;
 
-import java.util.List;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
@@ -13,11 +12,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private SysUserMapper sysUserMapper;
 
-
-
     @Override
-    public List<SysUser> selectUser(SysUser sysUser) {
-        return sysUserMapper.selectAll();
+    public SysUser selectOne(SysUser sysUser) {
+        return sysUserMapper.selectOne(sysUser);
     }
-
 }
